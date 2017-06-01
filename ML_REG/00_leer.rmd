@@ -3,6 +3,7 @@
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
 ml_reg_01.csv       |   The data show responses, percentages of total calories obtained from complex carbohydrates, for twenty male insulin-dependent diabetics who had been on a high-carbohydrate diet for six months. Compliance with the regime was thought to be related to age (in years), body weight (relative to ‘ideal’ weight for height) and other components of the diet, such as the percentage ofcalories as protein (Table 6.3 Dobson).
+ml_reg_02.csv       |   An experiment was conducted to compare yields Yi (measured by dried weight of plants) under a control condition and two different treatment conditions. (Table 6.6 Dobson).
 
 # Ejecución para la lectura de cada fichero
 
@@ -14,4 +15,7 @@ library(forcats)
 # ml_reg_01
 ml_reg_01=read_csv("https://goo.gl/Grm8xM", col_types = "dddd")
 str(ml_reg_01)
+# ml_reg_02
+ml_reg_02=read_csv("https://goo.gl/gRThLb", col_types = "cd")
+str(ml_reg_02)
 ```
