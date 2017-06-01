@@ -1,1 +1,24 @@
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+aov_01.csv       |   Genetically similar seeds are randomly assigned to be raised in either a nutritionally enriched environment (treatment group) or standard conditions (control group) using a completely randomized experimental design. After a predetermined time all plants are harvested, dried and weighed. The results, expressed in grams, for 20 plants in each group are shown.  (Table 2.7 Dobson).
+aov_02.csv       |  The weights, in kilograms, of twenty men before and after participation in a ‘waist loss’ program are shown.  (Table 2.8 Dobson).
+
+# Ejecución para la lectura de cada fichero
+
+```{r anova, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+##### Lectura de cada ejemplo
+# aov_01
+aov_01=read_csv("https://goo.gl/n1olNN", col_types = "dd")
+# Para construir modelos trasformamos los datos originales en ela forma habitual  
+aov_01b=aov_01 %>% gather(`treatment`,`control`,key = "Group", value = "Dried")
+# aov_02
+aov_02=read_csv("https://goo.gl/jWGurk", col_types = "idd")
+# Para construir modelos trasformamos los datos originales en ela forma habitual  
+aov_02b=aov_02 %>% gather(`before`,`after`,key = "Time", value = "Weight")
+```
 
