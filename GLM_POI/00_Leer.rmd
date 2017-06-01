@@ -13,16 +13,21 @@ glm_poi_04.csv       |   Survival time in weeks and log10 (initial white blood c
 ### Para cargar los datos
 library(tidyverse)
 library(forcats)
+
 ##### Lectura de cada ejemplo
+
 # glm_poi_01
 glm_poi_01=read_csv("https://goo.gl/TO5nST", col_types = "cii")
 str(glm_poi_01)
+
 # glm_poi_02
 glm_poi_02=read_csv("https://goo.gl/tp3s2d", col_types = "ci")
 str(glm_poi_02)
+
 # glm_poi_03
 glm_poi_03=read_csv("https://goo.gl/dt9Xa2", col_types = "iiii")
 str(glm_poi_03)
+
 # glm_poi_04
 glm_poi_04=read_csv("https://goo.gl/oHrCP5", col_types = "dd")
 str(glm_poi_04)
