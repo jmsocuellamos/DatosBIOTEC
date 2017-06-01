@@ -1,0 +1,25 @@
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+glm_poi_01.csv       |   Numbers of deaths from coronary heart disease and population sizes by 5-year age groups for men in the Hunter region of New South Wales, Australia in 1991 (Table 3.2 Dobson).
+glm_poi_02.csv       |   The data are the lifetimes (times to failure in hours) of Kevlar epoxy strand pressure vessels at 70% stress level (Table 4.1 Dobson).
+glm_poi_03.csv       |   The data table show the numbers ofcase s ofAID S in Australia by date of diagnosis for successive 3-months periods from 1984 to 1988. (Data from National Centre for HIV Epidemiology and Clinical Research, 1994.) (Table 4.5 Dobson).
+glm_poi_04.csv       |   Survival time in weeks and log10 (initial white blood cell count) for seventeen leukemia patients. (Table 4.6 Dobson).
+
+# Ejecución para la lectura de cada fichero
+
+```{r glm_poisson, eval=FALSE}
+# glm_poi_01
+glm_poi_01=read_csv("https://goo.gl/TO5nST", col_types = "cii")
+str(glm_poi_01)
+# glm_poi_02
+glm_poi_02=read_csv("https://goo.gl/tp3s2d", col_types = "ci")
+str(glm_poi_02)
+# glm_poi_03
+glm_poi_03=read_csv("https://goo.gl/dt9Xa2", col_types = "iiii")
+str(glm_poi_03)
+# glm_poi_04
+glm_poi_04=read_csv("https://goo.gl/oHrCP5", col_types = "dd")
+str(glm_poi_04)
+```
