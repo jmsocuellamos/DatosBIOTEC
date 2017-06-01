@@ -9,3 +9,6 @@ library(tidyverse)
 load("BOD2.rda")
 attach(BOD2)
 ```
+
+# Referencias
+>Bates and Watts (1998), Nonlinear Regression Analysis and Its Applications, Wiley,
