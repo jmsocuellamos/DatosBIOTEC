@@ -14,19 +14,25 @@ ml_reg_05.csv       |  It is well known that the concentration of cholesterol in
 ### Para cargar los datos
 library(tidyverse)
 library(forcats)
+
 ##### Lectura de cada ejemplo
+
 # ml_reg_01
 ml_reg_01=read_csv("https://goo.gl/Grm8xM", col_types = "dddd")
 str(ml_reg_01)
+
 # ml_reg_02
 ml_reg_02=read_csv("https://goo.gl/gRThLb", col_types = "cd")
 str(ml_reg_02)
+
 # ml_reg_03
 ml_reg_03=read_csv("https://goo.gl/w5KzKh", col_types = "cdd")
 str(ml_reg_03)
+
 # ml_reg_04
 ml_reg_04=read_csv("https://goo.gl/AOikQU", col_types = "dd")
 str(ml_reg_04)
+
 # ml_reg_05
 ml_reg_05=read_csv("https://goo.gl/EKXWRc", col_types = "ddd")
 str(ml_reg_05)
