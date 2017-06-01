@@ -26,3 +26,6 @@ aov_02b=aov_02 %>% gather(`before`,`after`,key = "Time", value = "Weight")
 aov_03=read_csv("https://goo.gl/3L4EtK", col_types = "dd")
 ```
 
+# Bibliografía
+
+>Dobson (2002). An introduction to generalized linear models
