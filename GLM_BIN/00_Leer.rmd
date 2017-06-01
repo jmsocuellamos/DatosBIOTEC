@@ -22,7 +22,8 @@ str(glm_bin_02)
 # Recodificación del factor
 glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2"))
 # glm_bin_03
-glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dc")
+glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dd")
+### leemos las dos varaibles como double para poder obtener la tabla de respuestas binomilaes (éxitos (y=con sintomas) , casos totales(n))para cada valor de score 
 str(glm_bin_03)
 # Recodificación del factor
 glm_bin_03 %>% mutate(senility=fct_recode(senility,"Symptoms" = "1","No Symptoms" = "0"))
