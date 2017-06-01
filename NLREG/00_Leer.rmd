@@ -1,6 +1,6 @@
 # ¿Cómo utilizar estos datos?
 
-Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fichero que contiene cada banco de datos. Una vez descargado se proporciona la sentencia para su carga. Se proporciona además un fichero pdf que contiene la descripción de todos los bancos de datos. 
+Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fichero que contiene cada banco de datos. Una vez descargado se proporciona la sentencia para su carga. Se proporciona además un fichero pdf que contiene la descripción completa de todos los bancos de datos. 
 
 # Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
