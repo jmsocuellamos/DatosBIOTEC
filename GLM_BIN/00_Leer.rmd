@@ -1,0 +1,20 @@
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+glm_bin_01.csv       |   Numbers of deaths from coronary heart disease and population sizes by 5-year age groups for men in the Hunter region of New South Wales, Australia in 1991 (Table 3.2 Dobson).
+
+# Ejecución para la lectura de cada fichero
+
+```{r glm_poisson, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+##### Lectura de cada ejemplo
+# glm_bin_01
+glm_bin_01=read_csv("https://goo.gl/TO5nST", col_types = "cii")
+str(glm_bin_01)
+```
+# Bibliografía
+
+>Dobson (2002). An introduction to generalized linear models
