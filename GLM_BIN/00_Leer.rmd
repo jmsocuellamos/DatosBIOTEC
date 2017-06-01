@@ -3,6 +3,7 @@
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
 glm_bin_01.csv       |   Table shows numbers of beetles dead after five hours exposure to gaseous carbon disulphide at various concentrations (Table 7.2 Dobson).
+glm_bin_02.csv       |   Numbers of embryogenic anthers ofthe plant species Datura innoxia Mill. obtained when numbers njk ofan thers were prepared under several different conditions. There is one qualitative factor with two levels, a treatment consisting ofstorage at 3◦C for 48 hours or a control storage condition, and one continuous explanatory variable represented by three values of centrifuging force (Table 7.5 Dobson).
 
 # Ejecución para la lectura de cada fichero
 
@@ -14,7 +15,13 @@ library(forcats)
 # glm_bin_01
 glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
 str(glm_bin_01)
+# glm_bin_02
+glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
+str(glm_bin_02)
+# Recodificación del factor
+glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2"))
 ```
+
 # Bibliografía
 
 >Dobson (2002). An introduction to generalized linear models
