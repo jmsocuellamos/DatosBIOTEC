@@ -10,6 +10,10 @@ glm_poi_04.csv       |   Survival time in weeks and log10 (initial white blood c
 # Ejecución para la lectura de cada fichero
 
 ```{r glm_poisson, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+##### Lectura de cada ejemplo
 # glm_poi_01
 glm_poi_01=read_csv("https://goo.gl/TO5nST", col_types = "cii")
 str(glm_poi_01)
