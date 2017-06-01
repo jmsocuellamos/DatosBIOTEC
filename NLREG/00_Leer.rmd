@@ -2,6 +2,9 @@
 
 Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fichero que contiene cada banco de datos. Una vez descargado se proporciona la sentencia para su carga. Se proporciona además un fichero pdf que contiene la descripción completa de todos los bancos de datos. 
 
+# Bancos de datos
+
+
 # Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
 # Seleccionas el fichero BOD2.rda y lo descargamos en tu directorio de trabajo. Abrimos la sesión de trabajo y ejcecutamos las sentencias siguientes
