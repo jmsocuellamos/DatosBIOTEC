@@ -20,6 +20,6 @@ str(ml_reg_01)
 ml_reg_02=read_csv("https://goo.gl/gRThLb", col_types = "cd")
 str(ml_reg_02)
 # ml_reg_03
-ml_reg_03=read_csv("https://goo.gl/gRThLb", col_types = "cdd")
+ml_reg_03=read_csv("https://goo.gl/w5KzKh", col_types = "cdd")
 str(ml_reg_03)
 ```
