@@ -4,6 +4,12 @@ Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fich
 
 # Bancos de datos
 
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+BOD2       |   The BOD2 data frame has 8 rows and 2 columns giving the biochemical oxygen demand versus time in an evaluation of water quality.
+Chloride|The Chloride data frame has 54 rows and 2 columns representing measurements of the chloride ion concentration in blood cells suspended in a salt solution.
+Coal|The Coal data frame has 23 rows and 20 columns of data on a coal liquefaction process.
+Ethyl|The Ethyl data frame has 12 rows and 3 columns of ethyl acrylate concentrations in exhalate of a rat.
 
 # Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
