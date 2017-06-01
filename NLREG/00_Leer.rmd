@@ -2,9 +2,10 @@
 
 Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fichero que contiene cada banco de datos. Una vez descargado se proporciona la sentencia para su carga. Se proporciona además un fichero pdf que contiene la descripción de todos los bancos de datos. Para el banco de datos BOD2 tendríamos las siguientes sentencias, donde los *...* indica el directorio donde se han descargado los datos
 
-# Carga de un ejemplos
+# Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
+# Seleccionas el fichero BOD2.rda y lo descargamos en nuestro directorio de trabajo. Abrimos la sesión de trabajo y ejcecutamos las sentencias siguientes
 library(tidyverse)
-load(".../BOD2.rda")
+load("BOD2.rda")
 attach(BOD2)
 ```
