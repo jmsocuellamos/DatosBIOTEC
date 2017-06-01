@@ -10,6 +10,19 @@ BOD2       |   The BOD2 data frame has 8 rows and 2 columns giving the biochemic
 Chloride|The Chloride data frame has 54 rows and 2 columns representing measurements of the chloride ion concentration in blood cells suspended in a salt solution.
 Coal|The Coal data frame has 23 rows and 20 columns of data on a coal liquefaction process.
 Ethyl|The Ethyl data frame has 12 rows and 3 columns of ethyl acrylate concentrations in exhalate of a rat.
+Isom|The Isom data frame has 24 rows and 4 columns from an isomerization experiment.
+Leaves|The Leaves data frame has 15 rows and 2 columns of leaf length over time.
+Lipo|The Lipo data frame has 12 rows and 2 columns of lipoprotein concentrations over time.
+Lubricant|The Lubricant data frame has 53 rows and 3 columns on the viscosity of a lubricant at different pressures and temperatures.
+Nitren|The Nitren data frame has 26 rows and 5 columns from an experiment in cardiology.
+Nitrite|The Nitrite data frame has 48 rows and 3 columns giving nitrite utilization by bean leaves under different light conditions on two different days.
+O.xylene|The O.xylene data frame has 57 rows and 4 columns of data on a chemical engineering experiment.
+Oilshale|The Oilshale data frame has 64 rows and 4 columns from an experiment on the pyrolysis of oil shale.
+PCB|The PCB data frame has 28 rows and 2 columns giving the concentration of polychlorinated biphenyls (PCB’s) in fish caught in Lake Cayuga in northern New York state. The fish had been tagged as yearlings so their ages could be accurately determined.
+Pinene|The Pinene data frame has 8 rows and 6 columns giving the proportion of alpha-pinene and four of its by-products over time.
+Pinene2|The Pinene data frame has 8 rows and 6 columns giving the proportion of alpha-pinene and four of its by-products over time from a second experiment.
+Rumford|The Rumford data frame has 13 rows and 2 columns from an experiment by Count Rumford on the rate of cooling.
+
 
 # Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
