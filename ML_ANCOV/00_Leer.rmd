@@ -10,7 +10,9 @@ ancov_01.csv       |   The data are the birthweights (in grams) and estimated ge
 ### Para cargar los datos
 library(tidyverse)
 library(forcats)
+
 ##### Lectura de cada ejemplo
+
 # anvoc_01
 ancov_01=read_csv("https://goo.gl/B3yoLJ", col_types = "ddc")
 str(ancov_01)
