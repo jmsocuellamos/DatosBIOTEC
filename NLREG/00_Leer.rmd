@@ -4,7 +4,7 @@ Para cargar estos datos hay que descargar y descomprimir en tu ordenador el fich
 
 # Carga de un ejemplo
 ```{r BOD2, eval=FALSE}
-# Seleccionas el fichero BOD2.rda y lo descargamos en nuestro directorio de trabajo. Abrimos la sesión de trabajo y ejcecutamos las sentencias siguientes
+# Seleccionas el fichero BOD2.rda y lo descargamos en tu directorio de trabajo. Abrimos la sesión de trabajo y ejcecutamos las sentencias siguientes
 library(tidyverse)
 load("BOD2.rda")
 attach(BOD2)
