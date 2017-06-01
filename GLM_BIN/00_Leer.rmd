@@ -13,14 +13,17 @@ glm_bin_03.csv       |   A sample of elderly people was given a psychiatric exam
 library(tidyverse)
 library(forcats)
 ##### Lectura de cada ejemplo
+
 # glm_bin_01
 glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
 str(glm_bin_01)
+
 # glm_bin_02
 glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
 str(glm_bin_02)
 # Recodificación del factor
 glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2"))
+
 # glm_bin_03
 glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dd")
 ### leemos las dos varaibles como double para poder obtener la tabla de respuestas binomilaes 
