@@ -5,7 +5,7 @@ Nombre             | Descripción
 aov_01.csv       |   Genetically similar seeds are randomly assigned to be raised in either a nutritionally enriched environment (treatment group) or standard conditions (control group) using a completely randomized experimental design. After a predetermined time all plants are harvested, dried and weighed. The results, expressed in grams, for 20 plants in each group are shown.  (Table 2.7 Dobson).
 aov_02.csv       |  The weights, in kilograms, of twenty men before and after participation in a ‘waist loss’ program are shown.  (Table 2.8 Dobson).
 aov_03.csv       |  Table shows plasma inorganic phosphate levels (mg/dl) one hour after a standard glucose tolerance test for obese subjects, with or without hyperinsulinemia, and controls  (Table 6.18 Dobson).
-aov_04.csv       |  The weights (in grams) ofmac hine components ofa standard size made by four different workers on two different days  (Table 6.19 Dobson).
+aov_04.csv       |  The weights (in grams) of machine components ofa standard size made by four different workers on two different days  (Table 6.19 Dobson).
 
 # Ejecución para la lectura de cada fichero
 
