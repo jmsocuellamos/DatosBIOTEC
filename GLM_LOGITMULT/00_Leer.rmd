@@ -20,12 +20,11 @@ library(forcats)
 
 # Se pasa la tabla de frecuencias a tabla de datos apra procesar los diferentes modelos
 
-# glm_bin_01
-glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
-str(glm_bin_01)
-# Calculamos los vivos
-glm_bin_01 = glm_bin_01 %>% mutate(alive=number-dead)
-
+# glm_multi_09
+glm_multi_09=read_csv("https://goo.gl/9beSxV", col_types = "ccii")
+str(glm_multi_09)
+# Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
+glm_multi_09b = glm_multi_09 %>% gather(`AU_Si`,`AU_No`,key = "AU", value = frecuencia)
 
 # glm_bin_02
 glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
