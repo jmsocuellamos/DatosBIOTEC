@@ -39,27 +39,47 @@ str(glm_multi_11)
 glm_multi_11b = glm_multi_11 %>% gather(`Muy insatisfecho`,`Poco insatisfecho`,`Moderadamente satisfecho`,`Muy satisfecho`,key = "Estado", value = frecuencia)
 
 
-
 # Datos donde se identifica la frecuencia de cada combinación de variables
 ##################################################################################################
 
-# glm_bin_03
-# éxito = tener síntomas que viene codificado con 1
-# fracaso = no tener síntomas que viene codificado con 0
-glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dc")
-str(glm_bin_03)
-# Convertimos la respuesta en variable numérica para el ajuste de modelos
-glm_bin_03b=glm_bin_03 %>% mutate(senility = 1*(senility==1))
-str(glm_bin_03)
+# glm_multi_01
+glm_multi_01=read_csv("https://goo.gl/xx6gp2", col_types = "ccci")
+str(glm_multi_01)
 
-# base de datos en libreria de R 
+# glm_multi_02
+glm_multi_02=read_csv("https://goo.gl/HEZtVU", col_types = "ccci")
+str(glm_multi_02)
 
-#kyphosis
-require(rpart)
-attach(kyphosis)
-# Convertimos la respuesta en variable numérica para el ajuste de modelos
-kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
-str(kyphosisb)
+# glm_multi_03
+glm_multi_03=read_csv("https://goo.gl/If7Il0", col_types = "ccci")
+str(glm_multi_03)
+
+# glm_multi_04
+glm_multi_04=read_csv("https://goo.gl/8aeoB7", col_types = "ccii")
+str(glm_multi_04)
+
+# glm_multi_05
+glm_multi_05=read_csv("https://goo.gl/yeCXsv", col_types = "cci")
+str(glm_multi_05)
+
+# glm_multi_06
+glm_multi_06=read_csv("https://goo.gl/jPcz7x", col_types = "cci")
+str(glm_multi_06)
+
+# glm_multi_07
+glm_multi_07=read_csv("https://goo.gl/z26KvC", col_types = "ccci")
+str(glm_multi_07)
+
+# glm_multi_08
+glm_multi_08=read_csv("https://goo.gl/ygFQLW", col_types = "cccii")
+str(glm_multi_08)
+## recodificar factores
+
+
+
+
+
+
 ```
 
 # Bibliografía
