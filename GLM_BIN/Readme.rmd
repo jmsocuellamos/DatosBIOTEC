@@ -68,6 +68,3 @@ kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
 str(kyphosisb)
 ```
 
-# Bibliografía
-
->Dobson (2002). An introduction to generalized linear models
