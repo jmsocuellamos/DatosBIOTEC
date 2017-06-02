@@ -8,7 +8,7 @@ glm_multi_03.csv       |   The data show tumor responses of male and female pati
 glm_multi_04.csv       |   The data are from a famous study conducted by Sir Richard Doll and colleagues. In 1951, all British doctors were sent a brief questionnaire about whether they smoked tobacco. Since then information about their deaths has been collected. Table shows the numbers ofdeath s from coronary heart disease among male doctors 10 years after the survey. It also shows the total number ofp erson-years ofobserv ation at the time ofthe analysis (Breslow and Day, 1987: Appendix 1A and page 112). (Table 9.1 Dobson).
 glm_multi_05.csv       |   These data are from a cross-sectional study of patients with a form of skin cancer called malignant melanoma. For a sample of n = 400 patients, the site ofthe tumor and its histological type were recorded. (Table 9.4 Dobson).
 glm_multi_06.csv       |   In a prospective study ofa new living attenuated recombinant vaccine for influenza, patients were randomly allocated to two groups, one of whic h was given the new vaccine and the other a saline placebo. The responses were titre levels of hemagglutinin inhibiting antibody found in the blood six weeks after vaccination; they were categorized as ‘small’, ‘medium’ or ‘large’.(Table 9.6 Dobson).
-
+glm_multi_07.csv       |  In this retrospective case-control study a group ofulcer patients was compared to a group ofcon trol patients not known to have peptic ulcer, but who were similar to the ulcer patients with respect to age, sex and socio-economic status. The ulcer patients were classified according to the site ofthe ulcer: gastric or duodenal. Aspirin use was ascertained for all subjects.  (Table 9.7 Dobson).
 
 # Ejecución para la lectura de cada fichero
 
