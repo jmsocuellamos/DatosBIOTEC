@@ -3,8 +3,7 @@
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
 ancov_01.csv       |   The data are the birthweights (in grams) and estimated gestational ages (in weeks) of12 male and female babies born in a certain hospital. The mean ages are almost the same for both sexes.  (Table 2.3 Dobson).
-ancov_02.csv       |   Frequencies of various malformations of the central nervous system recorded on live births in South Wales, UK. Study was designed to determine the effect of water hardness on the incidence of such malformations. Variables in dataset: NoCNS = 
-count of births with no CNS problem; An = count of Anencephalus births; Sp = count of Spina Bifida births; Other = count of other CNS births; Water = water hardeness; Work = a factor with levels Manual NonManual being the type of work done by the parents.
+ancov_02.csv       |   Frequencies of various malformations of the central nervous system recorded on live births in South Wales, UK. Study was designed to determine the effect of water hardness on the incidence of such malformations. Variables in dataset: NoCNS = count of births with no CNS problem; An = count of Anencephalus births; Sp = count of Spina Bifida births; Other = count of other CNS births; Water = water hardeness; Work = a factor with levels Manual NonManual being the type of work done by the parents.
 
 
 # Ejecución para la lectura de cada fichero
