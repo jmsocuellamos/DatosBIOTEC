@@ -1,1 +1,5 @@
-Ingresos,Muy satisfecho,Poco insatisfecho,Moderadamente satisfecho,Muy insatisfecho< 6000,20,24,80,826000 - 15000,22,38,104,12515000 - 25000,13,28,81,113> 25000,7,18,54,92
+Ingresos,Muy insatisfecho,Poco insatisfecho,Moderadamente satisfecho,Muy satisfecho
+< 6000,20,24,80,82
+6000 - 15000,22,38,104,125
+15000 - 25000,13,28,81,113
+> 25000,7,18,54,92
