@@ -8,11 +8,15 @@ glm_bin_03.csv       |   A sample of elderly people was given a psychiatric exam
 
 # Ejecución para la lectura de cada fichero
 
+
+
 ```{r glm_poisson, eval=FALSE}
 ### Para cargar los datos
 library(tidyverse)
 library(forcats)
 ##### Lectura de cada ejemplo
+
+# Datos en formato de tabla de conteos (total, éxitos)
 
 # glm_bin_01
 glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
@@ -24,14 +28,15 @@ str(glm_bin_02)
 # Recodificación del factor
 glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2"))
 
+
+# Datos donde una variable indica eel estado de la respuesta
+# Cuando sea necesario se debe recodificar para que el 1 identifique el "éxito" y 0 el "fracaso"
+
 # glm_bin_03
+# éxito = tener síntomas que viene codificado con 1
+# fracaso = no tener síntomas que viene codificado con 0
 glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dd")
-### leemos las dos varaibles como double para poder obtener la tabla de respuestas binomilaes 
-### (éxitos (y=con sintomas) , casos totales(n))para cada valor de score 
-str(glm_bin_03)
-# construimos la nueva tabla de conteos
-glm_bin_03b=unique(glm_bin_03 %>% arrange(score)%>% group_by(score) %>% mutate(n=n(),y=sum(senility)) 
-                              %>% select(score,y,n))
+
 ```
 
 # Bibliografía
