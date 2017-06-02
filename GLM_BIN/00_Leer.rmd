@@ -71,6 +71,11 @@ attach(kyphosis)
 kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
 str(kyphosisb)
 
+###########################################################################################
+## La varaible respuesta tiene más de dos posibles respuestas (respuesta nominal u ordinal)
+###########################################################################################
+
+
 ```
 
 # Bibliografía
