@@ -37,6 +37,3 @@ str(ml_reg_04)
 ml_reg_05=read_csv("https://goo.gl/EKXWRc", col_types = "ddd")
 str(ml_reg_05)
 ```
-# Bibliografía
-
->Dobson (2002). An introduction to generalized linear models
