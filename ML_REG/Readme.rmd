@@ -6,6 +6,8 @@ ml_reg_01.csv       |   The data show responses, percentages of total calories o
 ml_reg_03.csv       |   Data shows the average apparent per capita consumption ofsuga r (in kg per year) in Australia, as refined sugar and in manufactured foods (from Australian Bureau ofStatistics, 1998). (Table 6.15 Dobson).
 ml_reg_04.csv       |  Table shows response of a grass and legume pasture system to various quantities of phosphorus fertilizer (data from D. F. Sinclair; the results were reported in Sinclair and Probert, 1986). The total yield, ofgrass and legume together, and amount ofphosphorus (K) are both given in kilograms per hectare. (Table 6.16 Dobson).
 ml_reg_05.csv       |  It is well known that the concentration of cholesterol in blood serum increases with age but it is less clear whether cholesterol level is also associated with body weight. Data shows for thirty women serumcholesterol (millimoles per liter), age (years) and body mass index (weight divided by height squared, where weight was measured in kilograms and height in meters). (Table 6.17 Dobson).
+ml_reg_06.csv       |  In a study of cheddar cheese from the LaTrobe Valley of Victoria, Australia, samples of cheese were analyzed for their chemical composition (Acetic:concentration of acetic acid (log scale); H2S: concentration of hydrogen sulfice (log scale); Lactic:
+concentration of lactic acid) and were subjected to taste tests. Overall taste scores were obtained by combining the scores from several tasters.
 
 # Ejecución para la lectura de cada fichero
 
@@ -31,4 +33,8 @@ str(ml_reg_04)
 # ml_reg_05
 ml_reg_05=read_csv("https://goo.gl/EKXWRc", col_types = "ddd")
 str(ml_reg_05)
+
+# ml_reg_06
+ml_reg_06=read_csv("https://goo.gl/V4lDNs", col_types = "dddd")
+str(ml_reg_06)
 ```
