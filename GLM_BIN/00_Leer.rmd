@@ -50,7 +50,7 @@ glm_bin_04 %>%  mutate(alive=total-dead)
 glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dc")
 str(glm_bin_03)
 # Convertimos la respuesta en variable numérica para el ajuste de modelos
-glm_bin_03=glm_bin_03 %>% mutate(senility = 1*(senility==1))
+glm_bin_03b=glm_bin_03 %>% mutate(senility = 1*(senility==1))
 str(glm_bin_03)
 
 # base de datos en libreria de R 
@@ -58,6 +58,9 @@ str(glm_bin_03)
 #kyphosis
 require(rpart)
 attach(kyphosis)
+# Convertimos la respuesta en variable numérica para el ajuste de modelos
+kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
+str(kyphosisb)
 
 ```
 
