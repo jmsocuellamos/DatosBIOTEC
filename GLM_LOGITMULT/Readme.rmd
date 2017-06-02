@@ -79,5 +79,6 @@ str(glm_multi_07)
 glm_multi_08=read_csv("https://goo.gl/ygFQLW", col_types = "cccii")
 str(glm_multi_08)
 ## recodificar factores
-
+# Recodificación del factor
+glm_multi_08 %>% mutate(district=fct_recode(district,"London"="1","Otherwise"="0"))
 ```
