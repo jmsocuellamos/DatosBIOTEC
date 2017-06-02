@@ -21,7 +21,7 @@ library(forcats)
 ##### Lectura de cada ejemplo
 
 ###########################################################
-## La varaible respuesta sólo tiene dos posibles respuestas
+## La variable respuesta sólo tiene dos posibles respuestas
 ###########################################################
 
 # Datos en formato de tabla de conteos (total, éxitos)
@@ -72,7 +72,7 @@ kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
 str(kyphosisb)
 
 ###########################################################################################
-## La varaible respuesta tiene más de dos posibles respuestas (respuesta nominal u ordinal)
+## La variable respuesta tiene más de dos posibles respuestas (respuesta nominal u ordinal)
 ###########################################################################################
 
 
