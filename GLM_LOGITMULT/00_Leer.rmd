@@ -15,8 +15,11 @@ library(forcats)
 
 ##### Lectura de cada ejemplo
 
-# Datos en formato de tabla de conteos (total, éxitos)
+# Datos en formato de tabla de contingencia
 ########################################################
+
+# Se pasa la tabla de frecuencias a tabla de datos apra procesar los diferentes modelos
+
 # glm_bin_01
 glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
 str(glm_bin_01)
@@ -40,8 +43,7 @@ glm_bin_04 %>%  mutate(alive=total-dead)
 glm_bin_05=read_csv("https://goo.gl/ZDIWVC", col_types = "cdii")
 str(glm_bin_05)
 
-# Datos donde una variable indica el estado de la respuesta
-# Cuando sea necesario se debe recodificar para que el 1 identifique el "éxito" y 0 el "fracaso"
+# Datos donde se identifica la frecuencia de cada combinación de variables
 ##################################################################################################
 
 # glm_bin_03
