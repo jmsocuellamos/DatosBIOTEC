@@ -7,6 +7,7 @@ aov_02.csv       |  The weights, in kilograms, of twenty men before and after pa
 aov_03.csv       |  Table shows plasma inorganic phosphate levels (mg/dl) one hour after a standard glucose tolerance test for obese subjects, with or without hyperinsulinemia, and controls  (Table 6.18 Dobson).
 aov_04.csv       |  The weights (in grams) of machine components ofa standard size made by four different workers on two different days  (Table 6.19 Dobson).
 aov_05.csv       |   An experiment was conducted to compare yields (measured by dried weight of plants) under a control condition and two different treatment conditions. (Table 6.6 Dobson).
+aov_06.csv       |   Average butterfat content (percentages) of milk for random samples of twenty cows (ten two-year old and ten mature (greater than four years old)) from each of five breeds. The data are from Canadian records of pure-bred dairy cattle.
 
 # Ejecución para la lectura de cada fichero
 
@@ -37,4 +38,7 @@ aov_04=read_csv("https://goo.gl/fXWdO3", col_types = "ccd")
 aov_05=read_csv("https://goo.gl/XC8TE5", col_types = "cd")
 str(aov_05)
 
+# aov_06
+aov_06=read_csv("https://goo.gl/J2ZKWK", col_types = "cd")
+str(aov_06)
 ```
