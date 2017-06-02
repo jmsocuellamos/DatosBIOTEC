@@ -29,7 +29,7 @@ glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dd")
 ### leemos las dos varaibles como double para poder obtener la tabla de respuestas binomilaes 
 ### (éxitos (y=con sintomas) , casos totales(n))para cada valor de score 
 str(glm_bin_03)
-# construimos la nueva tabla de datos
+# construimos la nueva tabla de conteos
 glm_bin_03b=unique(glm_bin_03 %>% arrange(score)%>% group_by(score) %>% mutate(n=n(),y=sum(senility)) 
                               %>% select(score,y,n))
 ```
