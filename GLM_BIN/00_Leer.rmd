@@ -42,7 +42,9 @@ str(glm_bin_03)
 glm_bin_03=glm_bin_03 %>% mutate(senility = 1*(senility==1))
 str(glm_bin_03)
 
-# base de datos en libreria de R: kyphosis
+# base de datos en libreria de R 
+
+#kyphosis
 require(rpart)
 attach(kyphosis)
 
