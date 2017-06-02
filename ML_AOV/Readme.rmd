@@ -32,7 +32,3 @@ aov_03=read_csv("https://goo.gl/3L4EtK", col_types = "cd")
 # aov_04
 aov_04=read_csv("https://goo.gl/fXWdO3", col_types = "ccd")
 ```
-
-# Bibliografía
-
->Dobson (2002). An introduction to generalized linear models
