@@ -39,6 +39,6 @@ aov_05=read_csv("https://goo.gl/XC8TE5", col_types = "cd")
 str(aov_05)
 
 # aov_06
-aov_06=read_csv("https://goo.gl/J2ZKWK", col_types = "cd")
+aov_06=read_csv("https://goo.gl/J2ZKWK", col_types = "dcc")
 str(aov_06)
 ```
