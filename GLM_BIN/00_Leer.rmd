@@ -7,6 +7,7 @@ glm_bin_02.csv       |   Numbers of embryogenic anthers of the plant species Dat
 glm_bin_03.csv       |   A sample of elderly people was given a psychiatric examination to determine whether symptoms ofsenilit y were present. Other measurements taken at the same time included the score on a subset ofthe Wechsler Adult Intelligent Scale (WAIS). (Table 7.8 Dobson).
 kyphosis       |En esta tabla aparecen los datos de 81 niños que fueron intervenidos quirúrgicamente para corregirles problemas en la columna vertebral. La variable Kiphosis indica la presencia o ausencia de una deformidad postoperatoria en la columna. LAs otras tres variables son la edad del niño en mese, número de vértebras intervenidas, y la primera vértebra involucrada en la intervención.
 glm_bin_04.csv       |Collet (1991) presenta un experimneto sobre la toxicidad de distintas dosis (en microgramos) del piretroide trnas-cipemetrín en los capullos de gusano del tabaco. Se había comenzado a detectar resistencia de esas polillas a dicho tóxico (a determinadas dosis). El experimneto consitía en exponer, durante tres dias y a distintas dosis de tóxico, a series de 20 polillas de cada sexo. Se anotaron el número de polillas muertas en cada serie.
+glm_bin_05.csv       |Deaths from leukemia and other cancers classified by radiation dose received from the Hiroshima atomic bomb.(Table 7.11 Dobson).
 
 # Ejecución para la lectura de cada fichero
 
@@ -38,6 +39,10 @@ glm_bin_04=read_csv("https://goo.gl/w23RGz", col_types = "cdii")
 str(glm_bin_04)
 # Calculamos los vivos
 glm_bin_04 %>%  mutate(alive=total-dead)
+
+# glm_bin_05
+glm_bin_05=read_csv("https://goo.gl/ZDIWVC", col_types = "cdii")
+str(glm_bin_05)
 
 ##################################################################################################
 # Datos donde una variable indica el estado de la respuesta
