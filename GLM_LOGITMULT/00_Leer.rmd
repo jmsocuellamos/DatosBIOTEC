@@ -75,11 +75,6 @@ glm_multi_08=read_csv("https://goo.gl/ygFQLW", col_types = "cccii")
 str(glm_multi_08)
 ## recodificar factores
 
-
-
-
-
-
 ```
 
 # Bibliografía
