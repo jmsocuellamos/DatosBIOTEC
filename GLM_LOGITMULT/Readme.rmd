@@ -76,7 +76,3 @@ str(glm_multi_08)
 ## recodificar factores
 
 ```
-
-# Bibliografía
-
->Dobson (2002). An introduction to generalized linear models
