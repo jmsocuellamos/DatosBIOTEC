@@ -1,0 +1,68 @@
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+glm_bin_01.csv       |   Table shows numbers of beetles dead after five hours exposure to gaseous carbon disulphide at various concentrations (Table 7.2 Dobson).
+
+
+# Ejecución para la lectura de cada fichero
+
+
+```{r glm_poisson, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+
+##### Lectura de cada ejemplo
+
+# Datos en formato de tabla de conteos (total, éxitos)
+########################################################
+# glm_bin_01
+glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
+str(glm_bin_01)
+# Calculamos los vivos
+glm_bin_01 = glm_bin_01 %>% mutate(alive=number-dead)
+
+
+# glm_bin_02
+glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
+str(glm_bin_02)
+# Recodificación del factor y varaible de no embryogenic
+glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2")) %>% mutate(nembrig=total-embryogenic)
+
+# glm_bin_04
+glm_bin_04=read_csv("https://goo.gl/w23RGz", col_types = "cdii")
+str(glm_bin_04)
+# Calculamos los vivos
+glm_bin_04 %>%  mutate(alive=total-dead)
+
+# glm_bin_05
+glm_bin_05=read_csv("https://goo.gl/ZDIWVC", col_types = "cdii")
+str(glm_bin_05)
+
+# Datos donde una variable indica el estado de la respuesta
+# Cuando sea necesario se debe recodificar para que el 1 identifique el "éxito" y 0 el "fracaso"
+##################################################################################################
+
+# glm_bin_03
+# éxito = tener síntomas que viene codificado con 1
+# fracaso = no tener síntomas que viene codificado con 0
+glm_bin_03=read_csv("https://goo.gl/6E8fhd", col_types = "dc")
+str(glm_bin_03)
+# Convertimos la respuesta en variable numérica para el ajuste de modelos
+glm_bin_03b=glm_bin_03 %>% mutate(senility = 1*(senility==1))
+str(glm_bin_03)
+
+# base de datos en libreria de R 
+
+#kyphosis
+require(rpart)
+attach(kyphosis)
+# Convertimos la respuesta en variable numérica para el ajuste de modelos
+kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
+str(kyphosisb)
+```
+
+# Bibliografía
+
+>Dobson (2002). An introduction to generalized linear models
