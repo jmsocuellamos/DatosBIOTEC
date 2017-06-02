@@ -20,10 +20,6 @@ library(forcats)
 
 ##### Lectura de cada ejemplo
 
-###########################################################
-## La variable respuesta sólo tiene dos posibles respuestas
-###########################################################
-
 # Datos en formato de tabla de conteos (total, éxitos)
 ########################################################
 # glm_bin_01
@@ -70,12 +66,6 @@ attach(kyphosis)
 # Convertimos la respuesta en variable numérica para el ajuste de modelos
 kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
 str(kyphosisb)
-
-###########################################################################################
-## La variable respuesta tiene más de dos posibles respuestas (respuesta nominal u ordinal)
-###########################################################################################
-
-
 ```
 
 # Bibliografía
