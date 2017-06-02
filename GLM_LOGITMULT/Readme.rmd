@@ -3,7 +3,9 @@
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
 glm_multi_01.csv       |   In a study ofmotor vehicle safety, men and women driving small, medium sized and large cars were interviewed about vehicle safety and their preferences for cars, and various measurements were made of how close they sat to the steering wheel (McFadden et al., 2000). They were asked to rate how important various features were to them when they were buying a car. Data table shows the ratings for air conditioning and power steering, according to the sex and age ofthe subject (the categories ‘not important’ and ‘of little importance’ have been combined). (Table 8.1 Dobson).
-glm_multi_02.csv       |   The data are from an investigation into satisfaction with housing conditions in Copenhagen (derived from Example W in Cox and Snell, 1981, from original data from Madsen, 1971). Residents in selected areas living in rented homes built between 1960 and 1968 were questioned about their satisfaction and the degree of contact with other residents. The data were tabulated by type ofhousing.. (Table 8.5 Dobson).
+glm_multi_02.csv       |   The data are from an investigation into satisfaction with housing conditions in Copenhagen (derived from Example W in Cox and Snell, 1981, from original data from Madsen, 1971). Residents in selected areas living in rented homes built between 1960 and 1968 were questioned about their satisfaction and the degree of contact with other residents. The data were tabulated by type ofhousing. (Table 8.5 Dobson).
+glm_multi_03.csv       |   The data show tumor responses of male and female patients receiving treatment for small-cell lung cancer. There were two treatment regimes. For the sequential treatment, the same combination ofc hemotherapeutic agents was administered at each treatment cycle. For the alternating treatment, different combinations were alternated from cycle to cycle (data from Holtbrugger and Schumacher, 1991). (Table 8.6 Dobson).
+
 
 # Ejecución para la lectura de cada fichero
 
