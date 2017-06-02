@@ -5,7 +5,7 @@ Nombre             | Descripción
 glm_bin_01.csv       |   Table shows numbers of beetles dead after five hours exposure to gaseous carbon disulphide at various concentrations (Table 7.2 Dobson).
 glm_bin_02.csv       |   Numbers of embryogenic anthers ofthe plant species Datura innoxia Mill. obtained when numbers njk ofan thers were prepared under several different conditions. There is one qualitative factor with two levels, a treatment consisting ofstorage at 3◦C for 48 hours or a control storage condition, and one continuous explanatory variable represented by three values of centrifuging force (Table 7.5 Dobson).
 glm_bin_03.csv       |   A sample of elderly people was given a psychiatric examination to determine whether symptoms ofsenilit y were present. Other measurements taken at the same time included the score on a subset ofthe Wechsler Adult Intelligent Scale (WAIS). (Table 7.8 Dobson).
-kyphosis       |   En esta tabla aparecen los datos de 81 niños que fueron intervenidos quirúrgicamente para corregirles problemas en la columna vertebral. La variable Kiphosis indica la presencia o ausencia de una deformidad postoperatoria en la columna. LAs otras tres variables son la edad del niño en mese, número de vértebras intervenidas, y la primera vértebra involucrada en la intervención.
+kyphosis       |En esta tabla aparecen los datos de 81 niños que fueron intervenidos quirúrgicamente para corregirles problemas en la columna vertebral. La variable Kiphosis indica la presencia o ausencia de una deformidad postoperatoria en la columna. LAs otras tres variables son la edad del niño en mese, número de vértebras intervenidas, y la primera vértebra involucrada en la intervención.
 
 # Ejecución para la lectura de cada fichero
 
