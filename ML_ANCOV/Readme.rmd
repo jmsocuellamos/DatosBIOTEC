@@ -4,6 +4,7 @@ Nombre             | Descripción
 -------------------|------------------------------------------------------------
 ancov_01.csv       |   The data are the birthweights (in grams) and estimated gestational ages (in weeks) of12 male and female babies born in a certain hospital. The mean ages are almost the same for both sexes.  (Table 2.3 Dobson).
 ancov_02.csv       |   Frequencies of various malformations of the central nervous system recorded on live births in South Wales, UK. Study was designed to determine the effect of water hardness on the incidence of such malformations. Variables in dataset: NoCNS = count of births with no CNS problem; An = count of Anencephalus births; Sp = count of Spina Bifida births; Other = count of other CNS births; Water = water hardeness; Work = a factor with levels Manual NonManual being the type of work done by the parents.
+ancov_03.csv       |   16 insulin-dependent diabetic children were enrolled in a study involving a new treatment. 8 children received the new treatment(N) while the other 8 received the standard treatment(S). The age and sex of the child was recorded along with the measured value of gycosolated hemoglobin both before and after treatment.
 
 
 # Ejecución para la lectura de cada fichero
@@ -26,5 +27,9 @@ ancov_02=read_csv("https://goo.gl/bNOSxt", col_types = "cdddddc")
 str(ancov_02)
 # Total de enfermos
 ancov_02 %>% mutate(CNS=An+Sp+Other)
+
+# anvoc_03
+ancov_03=read_csv("https://goo.gl/0iFS9L", col_types = "dccdd")
+str(ancov_03)
 ```
 
