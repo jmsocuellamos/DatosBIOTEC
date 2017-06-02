@@ -24,23 +24,21 @@ library(forcats)
 glm_multi_09=read_csv("https://goo.gl/9beSxV", col_types = "ccii")
 str(glm_multi_09)
 # Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
-glm_multi_09b = glm_multi_09 %>% gather(`AU_Si`,`AU_No`,key = "AU", value = frecuencia)
+glm_multi_09b = glm_multi_09 %>% gather(`AU_Si`,`AU_No`, key = "AU", value = frecuencia)
 
-# glm_bin_02
-glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
-str(glm_bin_02)
-# Recodificación del factor y varaible de no embryogenic
-glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2")) %>% mutate(nembrig=total-embryogenic)
+# glm_multi_10
+glm_multi_10=read_csv("https://goo.gl/IcK96Y", col_types = "ciii")
+str(glm_multi_10)
+# Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
+glm_multi_10b = glm_multi_10 %>% gather(`Esterilizar`,`Otros`, `Ninguno`, key = "Metodo", value = frecuencia)
 
-# glm_bin_04
-glm_bin_04=read_csv("https://goo.gl/w23RGz", col_types = "cdii")
-str(glm_bin_04)
-# Calculamos los vivos
-glm_bin_04 %>%  mutate(alive=total-dead)
+# glm_multi_11
+glm_multi_11=read_csv("https://goo.gl/5T0nh0", col_types = "ciiii")
+str(glm_multi_11)
+# Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
+glm_multi_11b = glm_multi_11 %>% gather(`Muy insatisfecho`,`Poco insatisfecho`,`Moderadamente satisfecho`,`Muy satisfecho`,key = "Estado", value = frecuencia)
 
-# glm_bin_05
-glm_bin_05=read_csv("https://goo.gl/ZDIWVC", col_types = "cdii")
-str(glm_bin_05)
+
 
 # Datos donde se identifica la frecuencia de cada combinación de variables
 ##################################################################################################
