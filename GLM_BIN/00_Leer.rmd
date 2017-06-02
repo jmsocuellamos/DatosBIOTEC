@@ -22,13 +22,15 @@ library(forcats)
 # glm_bin_01
 glm_bin_01=read_csv("https://goo.gl/E2MlSZ", col_types = "dii")
 str(glm_bin_01)
+# Calculamos los vivos
+glm_bin_01 = glm_bin_01 %>% mutate(alive=number-dead)
+
 
 # glm_bin_02
 glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
 str(glm_bin_02)
-# Recodificación del factor
-glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2"))
-
+# Recodificación del factor y varaible de no embryogenic
+glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2")) %>% mutate(nembrig=total-embryogenic)
 
 # Datos donde una variable indica el estado de la respuesta
 # Cuando sea necesario se debe recodificar para que el 1 identifique el "éxito" y 0 el "fracaso"
