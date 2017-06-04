@@ -1,1 +1,24 @@
+# Descripción de ficheros
 
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+glm_surv_01.csv       |  Remission times of leukemia patients; data from Gehan (1965).
+glm_surv_02.csv       |  Survival times in months of patients with chronic active hepatitis in a randomized controlled trial of prednisolone versus no treatment; data from Altman and Bland (1998).
+
+# Ejecución para la lectura de cada fichero
+
+```{r ancova, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+
+##### Lectura de cada ejemplo
+
+# glm_surv_01
+glm_surv_01=read_csv("https://goo.gl/d4YI9g", col_types = "cid")
+str(glm_surv_01)
+
+# glm_surv_02
+glm_surv_02=read_csv("https://goo.gl/Rzxo3o", col_types = "dcc")
+str(glm_surv_02)
+```
