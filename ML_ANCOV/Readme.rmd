@@ -33,7 +33,7 @@ ancov_03=read_csv("https://goo.gl/0iFS9L", col_types = "dccdd")
 str(ancov_03)
 
 # anvoc_04
-ancov_04=read_csv("https://goo.gl/OX9wgM", col_types = "dccdd")
+ancov_04=read_csv("https://goo.gl/OX9wgM", col_types = "ddddddc")
 str(ancov_04)
 ```
 
