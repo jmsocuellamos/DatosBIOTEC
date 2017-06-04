@@ -2,8 +2,7 @@
 
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
-glm_longi_01.csv       |   The data in Table 11.1 are from an experiment to promote the recovery of stroke patients. There were three experimental groups: A was a new occupational therapy intervention; B was the existing stroke rehabilitation program conducted in the same hospital where A was conducted; C was the usual care regime for stroke patients provided in a different hospital.  There were eight patients in each experimental group. The response variable was a measure off unctional ability, the Bartel index; higher scores correspond
-to better outcomes and the maximum score is 100. Each patient was assessed weekly over the eight weeks ofthe study. The study was conducted by C. Cropper, at the University ofQueensland, and the data were obtained from the OzDasl website developed by Gordon Smyth
+glm_longi_01.csv       |   The data in Table 11.1 are from an experiment to promote the recovery of stroke patients. There were three experimental groups: A was a new occupational therapy intervention; B was the existing stroke rehabilitation program conducted in the same hospital where A was conducted; C was the usual care regime for stroke patients provided in a different hospital.  There were eight patients in each experimental group. The response variable was a measure off unctional ability, the Bartel index; higher scores correspond to better outcomes and the maximum score is 100. Each patient was assessed weekly over the eight weeks ofthe study. The study was conducted by C. Cropper, at the University ofQueensland, and the data were obtained from the OzDasl website developed by Gordon Smyth
 
 
 # Ejecución para la lectura de cada fichero
