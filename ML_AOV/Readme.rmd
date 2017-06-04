@@ -8,6 +8,8 @@ aov_03.csv       |  Table shows plasma inorganic phosphate levels (mg/dl) one ho
 aov_04.csv       |  The weights (in grams) of machine components ofa standard size made by four different workers on two different days  (Table 6.19 Dobson).
 aov_05.csv       |   An experiment was conducted to compare yields (measured by dried weight of plants) under a control condition and two different treatment conditions. (Table 6.6 Dobson).
 aov_06.csv       |   Average butterfat content (percentages) of milk for random samples of twenty cows (ten two-year old and ten mature (greater than four years old)) from each of five breeds. The data are from Canadian records of pure-bred dairy cattle.
+aov_07.csv       |   Average butterfat content (percentages) of milk for random samples of twenty cows (ten two-year old and ten mature (greater than four years old)) from each of five breeds. The data are from Canadian records of pure-bred dairy cattle.
+
 
 # Ejecución para la lectura de cada fichero
 
@@ -41,4 +43,8 @@ str(aov_05)
 # aov_06
 aov_06=read_csv("https://goo.gl/J2ZKWK", col_types = "dcc")
 str(aov_06)
+
+# aov_07
+aov_07=read_csv("https://goo.gl/zFFHKJ", col_types = "dcc")
+str(aov_07)
 ```
