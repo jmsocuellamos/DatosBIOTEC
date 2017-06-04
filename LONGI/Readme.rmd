@@ -1,1 +1,29 @@
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+glm_longi_01.csv       |   The data in Table 11.1 are from an experiment to promote the recovery of stroke patients. There were three experimental groups: A was a new occupational therapy intervention; B was the existing stroke rehabilitation program conducted in the same
+hospital where A was conducted; C was the usual care regime for stroke patients provided in a different hospital.  There were eight patients in each experimental group. The response variable was a measure off unctional ability, the Bartel index; higher scores correspond
+to better outcomes and the maximum score is 100. Each patient was assessed weekly over the eight weeks ofthe study. The study was conducted by C. Cropper, at the University ofQueensland, and the data were obtained from the OzDasl website developed by Gordon Smyth
+
+
+# Ejecución para la lectura de cada fichero
+
+```{r glm_poisson, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(forcats)
+
+##### Lectura de cada ejemplo
+
+# Datos en formato de tabla de contingencia
+########################################################
+
+# glm_longi_01
+glm_longi_01=read_csv("https://goo.gl/ccAkzL", col_types = "icdddddddd")
+str(glm_longi_01)
+# Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
+glm_longi_01b = glm_longi_01 %>% gather(`AU_Si`,`AU_No`, key = "AU", value = frecuencia)
+
+```
 
