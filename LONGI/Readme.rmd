@@ -20,7 +20,7 @@ library(forcats)
 # glm_longi_01
 glm_longi_01=read_csv("https://goo.gl/ccAkzL", col_types = "icdddddddd")
 str(glm_longi_01)
-# Construimos la tabla donde cada fila recoje la frecuenia observada para combinación de las variables
+# Construimos la tabla donde cada fila representa la información por sujeto y semana
 glm_longi_01b = glm_longi_01 %>% gather(`week1`,`week1`,`week3`,`week4`,`week5`,`week6`,`week7`,`week8`, key = "week", value = stroke)
 
 ```
