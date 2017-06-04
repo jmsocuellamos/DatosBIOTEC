@@ -3,7 +3,7 @@
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
 glm_longi_01.csv       |   The data are from an experiment to promote the recovery of stroke patients. There were three experimental groups: A was a new occupational therapy intervention; B was the existing stroke rehabilitation program conducted in the same hospital where A was conducted; C was the usual care regime for stroke patients provided in a different hospital.  There were eight patients in each experimental group. The response variable was a measure off unctional ability, the Bartel index; higher scores correspond to better outcomes and the maximum score is 100. Each patient was assessed weekly over the eight weeks ofthe study. The study was conducted by C. Cropper, at the University ofQueensland, and the data were obtained from the OzDasl website developed by Gordon Smyth
-
+glm_longi_02.csv       |The measurement of left ventricular volume of the heart is important for studies ofcardiac physiology and clinical management ofpatien ts with heart disease. An indirect way ofmeasuring the volume, y, involves a measurement called parallel conductance volume, x. Measurements of left ventricular volume and parallel conductance volume on five dogs under eight different load conditions: data from Boltwood et al. (1989).   
 
 # Ejecución para la lectura de cada fichero
 
@@ -22,6 +22,11 @@ glm_longi_01=read_csv("https://goo.gl/ccAkzL", col_types = "icdddddddd")
 str(glm_longi_01)
 # Construimos la tabla donde cada fila representa la información por sujeto y semana
 glm_longi_01b = glm_longi_01 %>% gather(`week1`,`week1`,`week3`,`week4`,`week5`,`week6`,`week7`,`week8`, key = "week", value = stroke)
+
+# glm_longi_02
+glm_longi_02=read_csv("https://goo.gl/9LO53e", col_types = "iidd")
+str(glm_longi_02)
+
 
 ```
 
