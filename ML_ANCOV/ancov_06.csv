@@ -1,4 +1,4 @@
-“zscore”,”c_gender”,”c_breastf”,”c_age”,”m_agebirth”,”m_height”,”m_bmi”,”m_education”,”m_work”,”district”,”region”,”time”
+zscore,c_gender,c_breastf,c_age,m_agebirth,m_height,m_bmi,m_education,m_work,district,region,time
 -159,0,0,4,24.66667,148.9,21.83,2,0,81,1,1
 -205,0,13,26,22.83333,148.9,21.83,2,0,81,1,1
 -192,1,18,56,15.33333,169.2,20.43,2,1,81,1,1
