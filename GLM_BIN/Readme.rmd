@@ -11,7 +11,8 @@ glm_bin_05.csv       |Deaths from leukemia and other cancers classified by ra
 glm_bin_06.csv       |Table contains grouped (n) data on infections of mothers after a C-section collected at the
 clinical center of the University of Munich (Example 5.2 Fahrmeir).
 glm_bin_07.csv       |When issuing credit, banks check the “solvency” or “creditworthiness” of clients, i.e., their ability and willingness to pay back the credit in the specified time frame. To evaluate creditworthiness using statistical methods (credit scoring), characteristics of the borrower are requested that reflect his or her personal and economic situation and thus influence the probability of creditworthiness. Other variables are: acc1 and acc2; duration=Duration of the credit in months; amount=Credit amount in 1000 Euro; moral=Previous payment behavior; intuse=Intended use  (Example 5.5 Fahrmeir).
-
+glm_bin_08.csv       | The European Patent Office is able to protect a patent from competition for a certain period of time. The Patent Office has the task to examine inventions and to declare patent if certain prerequisites are fulfilled. The most important requirement is that the invention is something truly new. In order to analyze objections against patents, a data set with 4,866 patents from the
+sectors biotechnology/pharmaceutics and semiconductor/computer was collected. Variables inclided are: opp=Patent opposition; biopharm= Patent from biotech/pharma sector; ustwin=US twin patent exists; patus=Patent holder from the USA; patgsgr= Patent holder from Germany, Switzerland, or Great Britain; year= Grant year; ncit= Number of citations for the patent; ncountry= Number of designated states for the patent; nclaims= Number of claims  (Example 1.3 Fahrmeir).
 
 # Ejecución para la lectura de cada fichero
 
@@ -82,5 +83,11 @@ glm_bin_07=read_csv("https://hec.su/goEN", col_types = "cccddcc")
 str(glm_bin_07)
 # Recodificación de factores 
 glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
+
+# glm_bin_08
+glm_bin_08=read_csv("https://hec.su/goEN", col_types = "dcccciddd")
+str(glm_bin_08)
+# Recodificación de factores 
+glm_bin_08 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
 ```
 
