@@ -8,6 +8,8 @@ glm_bin_03.csv       |   A sample of elderly people was given a psychiatric exam
 kyphosis       |En esta tabla aparecen los datos de 81 niños que fueron intervenidos quirúrgicamente para corregirles problemas en la columna vertebral. La variable Kiphosis indica la presencia o ausencia de una deformidad postoperatoria en la columna. LAs otras tres variables son la edad del niño en mese, número de vértebras intervenidas, y la primera vértebra involucrada en la intervención.
 glm_bin_04.csv       |Collet (1991) presenta un experimneto sobre la toxicidad de distintas dosis (en microgramos) del piretroide trnas-cipemetrín en los capullos de gusano del tabaco. Se había comenzado a detectar resistencia de esas polillas a dicho tóxico (a determinadas dosis). El experimneto consitía en exponer, durante tres dias y a distintas dosis de tóxico, a series de 20 polillas de cada sexo. Se anotaron el número de polillas muertas en cada serie.
 glm_bin_05.csv       |Deaths from leukemia and other cancers classified by radiation dose received from the Hiroshima atomic bomb.(Table 7.11 Dobson).
+glm_bin_06.csv       |Table contains grouped (n) data on infections of mothers after a C-section collected at the
+clinical center of the University of Munich (Example 5.2 Fahrmeir).
 
 # Ejecución para la lectura de cada fichero
 
@@ -66,5 +68,12 @@ attach(kyphosis)
 # Convertimos la respuesta en variable numérica para el ajuste de modelos
 kyphosisb=kyphosis %>% mutate(Kyphosis = 1*(Kyphosis=="present"))
 str(kyphosisb)
+
+# glm_bin_06
+glm_bin_06=read_csv("https://goo.gl/zFI84h", col_types = "dcccci")
+str(glm_bin_06)
+# Recodificación del factor y varaible de no embryogenic
+glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
+
 ```
 
