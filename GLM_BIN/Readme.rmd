@@ -8,8 +8,7 @@ glm_bin_03.csv       |   A sample of elderly people was given a psychiatric exam
 kyphosis       |En esta tabla aparecen los datos de 81 niños que fueron intervenidos quirúrgicamente para corregirles problemas en la columna vertebral. La variable Kiphosis indica la presencia o ausencia de una deformidad postoperatoria en la columna. LAs otras tres variables son la edad del niño en mese, número de vértebras intervenidas, y la primera vértebra involucrada en la intervención.
 glm_bin_04.csv       |Collet (1991) presenta un experimneto sobre la toxicidad de distintas dosis (en microgramos) del piretroide trnas-cipemetrín en los capullos de gusano del tabaco. Se había comenzado a detectar resistencia de esas polillas a dicho tóxico (a determinadas dosis). El experimneto consitía en exponer, durante tres dias y a distintas dosis de tóxico, a series de 20 polillas de cada sexo. Se anotaron el número de polillas muertas en cada serie.
 glm_bin_05.csv       |Deaths from leukemia and other cancers classified by radiation dose received from the Hiroshima atomic bomb.(Table 7.11 Dobson).
-glm_bin_06.csv       |Table contains grouped (n) data on infections of mothers after a C-section collected at the
-clinical center of the University of Munich (Example 5.2 Fahrmeir).
+glm_bin_06.csv       |Table contains grouped (n) data on infections of mothers after a C-section collected at the clinical center of the University of Munich (Example 5.2 Fahrmeir).
 glm_bin_07.csv       |When issuing credit, banks check the “solvency” or “creditworthiness” of clients, i.e., their ability and willingness to pay back the credit in the specified time frame. To evaluate creditworthiness using statistical methods (credit scoring), characteristics of the borrower are requested that reflect his or her personal and economic situation and thus influence the probability of creditworthiness. Other variables are: acc1 and acc2; duration=Duration of the credit in months; amount=Credit amount in 1000 Euro; moral=Previous payment behavior; intuse=Intended use  (Example 5.5 Fahrmeir).
 glm_bin_08.csv       | The European Patent Office is able to protect a patent from competition for a certain period of time. The Patent Office has the task to examine inventions and to declare patent if certain prerequisites are fulfilled. The most important requirement is that the invention is something truly new. In order to analyze objections against patents, a data set with 4,866 patents from the
 sectors biotechnology/pharmaceutics and semiconductor/computer was collected. Variables inclided are: opp=Patent opposition; biopharm= Patent from biotech/pharma sector; ustwin=US twin patent exists; patus=Patent holder from the USA; patgsgr= Patent holder from Germany, Switzerland, or Great Britain; year= Grant year; ncit= Number of citations for the patent; ncountry= Number of designated states for the patent; nclaims= Number of claims  (Example 1.3 Fahrmeir).
@@ -79,15 +78,15 @@ str(glm_bin_06)
 glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
 
 # glm_bin_07
-glm_bin_07=read_csv("https://hec.su/goEN", col_types = "cccddcc")
+glm_bin_07=read_csv("https://hec.su/goEN", col_types = "dccddcc")
 str(glm_bin_07)
 # Recodificación de factores 
 glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
 
 # glm_bin_08
-glm_bin_08=read_csv("https://hec.su/goEN", col_types = "dcccciddd")
+glm_bin_08=read_csv("https://hec.su/goJb", col_types = "dcccciddd")
 str(glm_bin_08)
 # Recodificación de factores 
-glm_bin_08 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
+glm_bin_08 %>% mutate(opp=fct_recode(opp,"yes" = "1","no" = "0"),biopharm=fct_recode(biopharm,"yes" = "1","no" ="0"),ustwin=fct_recode(ustwin,"yes" = "1","no" = "0"),patus=fct_recode(patus,"yes" = "1","no" = "0"),patgsgr=fct_recode(patgsgr,"yes" = "1","no" = "0")) 
 ```
 
