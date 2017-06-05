@@ -10,6 +10,8 @@ glm_bin_04.csv       |Collet (1991) presenta un experimneto sobre la toxicida
 glm_bin_05.csv       |Deaths from leukemia and other cancers classified by radiation dose received from the Hiroshima atomic bomb.(Table 7.11 Dobson).
 glm_bin_06.csv       |Table contains grouped (n) data on infections of mothers after a C-section collected at the
 clinical center of the University of Munich (Example 5.2 Fahrmeir).
+glm_bin_07.csv       |When issuing credit, banks check the “solvency” or “creditworthiness” of clients, i.e., their ability and willingness to pay back the credit in the specified time frame. To evaluate creditworthiness using statistical methods (credit scoring), characteristics of the borrower are requested that reflect his or her personal and economic situation and thus influence the probability of creditworthiness. Other variables are: acc1 and acc2; duration=Duration of the credit in months; amount=Credit amount in 1000 Euro; moral=Previous payment behavior; intuse=Intended use  (Example 5.5 Fahrmeir).
+
 
 # Ejecución para la lectura de cada fichero
 
@@ -72,8 +74,13 @@ str(kyphosisb)
 # glm_bin_06
 glm_bin_06=read_csv("https://goo.gl/zFI84h", col_types = "dcccci")
 str(glm_bin_06)
-# Recodificación del factor y varaible de no embryogenic
+# Recodificación de factores 
 glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
 
+# glm_bin_07
+glm_bin_07=read_csv("https://hec.su/goEN", col_types = "cccddcc")
+str(glm_bin_07)
+# Recodificación de factores 
+glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
 ```
 
