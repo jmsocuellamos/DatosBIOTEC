@@ -6,6 +6,7 @@ ancov_01.csv       |   The data are the birthweights (in grams) and estimated ge
 ancov_02.csv       |   Frequencies of various malformations of the central nervous system recorded on live births in South Wales, UK. Study was designed to determine the effect of water hardness on the incidence of such malformations. Variables in dataset: NoCNS = count of births with no CNS problem; An = count of Anencephalus births; Sp = count of Spina Bifida births; Other = count of other CNS births; Water = water hardeness; Work = a factor with levels Manual NonManual being the type of work done by the parents.
 ancov_03.csv       |   16 insulin-dependent diabetic children were enrolled in a study involving a new treatment. 8 children received the new treatment(N) while the other 8 received the standard treatment(S). The age and sex of the child was recorded along with the measured value of gycosolated hemoglobin both before and after treatment.
 ancov_04.csv       |  Se ha realizado un estudio para establecer la calidad de los vinos de la variedad Pino Noir en función de un conjunto de caractersticas analizadas, por un conjunto de expertos, sobre cada uno de ellos y la región de procedencia. 
+ancov_05.csv       | Tabla show data from the sales price of pre-owned VWGolf automobiles. Our goal is to model the relationship between the sales price in 1,000 Euro (variable price) and the five explanatory variables “age of the car in months” (age), “kilometer reading in 1,000 km” (kilometer), “number of months until the next appointment with the Technical Inspection Agency” (TIA), “ABS brake yes/no” (extras1), and “sunroof yes/no” (extras2).  Other varaibles are not relevant (Example 3.19 Farhmeir) 
 
 # Ejecución para la lectura de cada fichero
 
@@ -16,24 +17,28 @@ library(forcats)
 
 ##### Lectura de cada ejemplo
 
-# anvoc_01
+# ancov_01
 ancov_01=read_csv("https://goo.gl/B3yoLJ", col_types = "ddc")
 str(ancov_01)
 # Recodificación del factor
 ancov_01 %>% mutate(sex=fct_recode(sex,"Boy"="1","Girl"="2"))
 
-# anvoc_02
+# ancov_02
 ancov_02=read_csv("https://goo.gl/bNOSxt", col_types = "cdddddc")
 str(ancov_02)
 # Total de enfermos
 ancov_02 %>% mutate(CNS=An+Sp+Other)
 
-# anvoc_03
+# ancov_03
 ancov_03=read_csv("https://goo.gl/0iFS9L", col_types = "dccdd")
 str(ancov_03)
 
-# anvoc_04
+# ancov_04
 ancov_04=read_csv("https://goo.gl/OX9wgM", col_types = "ddddddc")
 str(ancov_04)
+
+# ancov_05
+ancov_05=read_csv("https://hec.su/goIT", col_types = "ddddccdddddd")
+str(ancov_05)
 ```
 
