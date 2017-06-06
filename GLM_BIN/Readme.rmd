@@ -36,13 +36,13 @@ glm_bin_01 = glm_bin_01 %>% mutate(alive=number-dead)
 glm_bin_02=read_csv("https://goo.gl/6P3zRr", col_types = "ddcd")
 str(glm_bin_02)
 # Recodificación del factor y varaible de no embryogenic
-glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2")) %>% mutate(nembrig=total-embryogenic)
+glm_bin_02=glm_bin_02 %>% mutate(storage=fct_recode(storage,"Control" = "1","treatment" = "2")) %>% mutate(nembrig=total-embryogenic)
 
 # glm_bin_04
 glm_bin_04=read_csv("https://goo.gl/w23RGz", col_types = "cdii")
 str(glm_bin_04)
 # Calculamos los vivos
-glm_bin_04 %>%  mutate(alive=total-dead)
+glm_bin_04=glm_bin_04 %>%  mutate(alive=total-dead)
 
 # glm_bin_05
 glm_bin_05=read_csv("https://goo.gl/ZDIWVC", col_types = "cdii")
@@ -74,18 +74,18 @@ str(kyphosisb)
 glm_bin_06=read_csv("https://goo.gl/zFI84h", col_types = "dcccci")
 str(glm_bin_06)
 # Recodificación de factores 
-glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
+glm_bin_06=glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
 
 # glm_bin_07
 glm_bin_07=read_csv("https://hec.su/goEN", col_types = "dccddcc")
 str(glm_bin_07)
 # Recodificación de factores 
-glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
+glm_bin_07=glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
 
 # glm_bin_08
 glm_bin_08=read_csv("https://hec.su/goJb", col_types = "dcccciddd")
 str(glm_bin_08)
 # Recodificación de factores 
-glm_bin_08 %>% mutate(opp=fct_recode(opp,"yes" = "1","no" = "0"),biopharm=fct_recode(biopharm,"yes" = "1","no" ="0"),ustwin=fct_recode(ustwin,"yes" = "1","no" = "0"),patus=fct_recode(patus,"yes" = "1","no" = "0"),patgsgr=fct_recode(patgsgr,"yes" = "1","no" = "0")) 
+glm_bin_08=glm_bin_08 %>% mutate(opp=fct_recode(opp,"yes" = "1","no" = "0"),biopharm=fct_recode(biopharm,"yes" = "1","no" ="0"),ustwin=fct_recode(ustwin,"yes" = "1","no" = "0"),patus=fct_recode(patus,"yes" = "1","no" = "0"),patgsgr=fct_recode(patgsgr,"yes" = "1","no" = "0")) 
 ```
 
