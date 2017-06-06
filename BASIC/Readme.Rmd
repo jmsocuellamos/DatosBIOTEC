@@ -9,7 +9,7 @@ airquality      |Daily readings of the following air quality values for May 1, 1
 esoph      |Data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France. 
 mtcars      |The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
 Puromycin      |The Puromycin data frame has 23 rows and 3 columns of the reaction velocity versus substrate concentration in an enzymatic reaction involving untreated cells or cells treated with Puromycin.
-NCBIRTH800      |The table presents data from birth and infant death data for all children born in the state of North Carolina. This comprenhensive data set for the births in 2001. The variables are as follows: plural (number of children born of the pregnancy),	sex (sex of child),	mage (age of mother),	weeks (completed weeks of gestation),	marital (maritak status),	racemom (race of mother),	hispmom (mother of hispanic origin),	gained (weight gained during pregnancy in pounds), smoke,	drink, tounces (weight of child in onces),	tgrams (weight of child in grams), low (low birth weight),	premie (premature) (pag 56, Daniel)
+NCBIRTH800      |The table presents data from birth and infant death data for all children born in the state of North Carolina. This comprenhensive data set for the births in 2001. The variables are as follows: plural (number of children born of the pregnancy),	sex (sex of child),	mage (age of mother),	weeks (completed weeks of gestation),	marital (marital status),	racemom (race of mother),	hispmom (mother of hispanic origin),	gained (weight gained during pregnancy in pounds), smoke,	drink, tounces (weight of child in onces),	tgrams (weight of child in grams), low (low birth weight),	premie (premature) (pag 56, Daniel)
 
 # Ejecución para la lectura de cada fichero
 
@@ -44,4 +44,15 @@ str(mtcars)
 attach(Puromycin)
 help(Puromycin)
 str(Puromycin)
+
+##### Bancos de datos del libro de Daniel: Biostatistics
+
+# NCBIRTH800
+NCBIRTH800=read_csv("https://goo.gl/mB9Jcn", col_types = "dcddcccdccddcc")
+str(NCBIRTH800)
+# Recodificación del factor
+NCBIRTH800 %>% mutate(sex=fct_recode(sex,"male"="1","female"="2"),marital=fct_recode(marital,"married"="1","not married"="2"),racemom=fct_recode(racemom,"other non white"="0","White"="1","Black"="2","America indian"="3","Chinese"="4","Hawaiian"="5","Filipino"="6","Other asian"="7"),hispmom=fct_recode(hispmom,"Cuban"="C","Mexican"="M","Non-Hispanic"="N","Other"="O","Puerto Rican"="P","Central/South american"="S","U"="Not classificable"))
+
+
+
 ```
