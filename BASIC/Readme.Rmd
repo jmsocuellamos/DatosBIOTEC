@@ -1,1 +1,31 @@
+A continuación s epresentan los bancos de datos básicos que utilizaremos en la primera parte del curso y como ejemplo de algunos de los modleos que veremos en la segunda parte.
 
+
+# Descripción de ficheros
+
+Nombre             | Descripción
+-------------------|------------------------------------------------------------
+airquality      |Daily readings of the following air quality values for May 1, 1973 (a Tuesday) to September 30, 1973. Variables: Ozone = Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island; Solar.R = Solar radiation in Langleys in the frequency band 4000–7700 Angstroms from 0800 to 1200 hours at Central Park; Wind = Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport; Temp = Maximum daily temperature in degrees Fahrenheit at La Guardia Airport; Month and Day.  
+
+
+# Ejecución para la lectura de cada fichero
+
+```{r ml, eval=FALSE}
+### Para cargar los datos
+library(tidyverse)
+library(stringr)
+library(forcats)
+library(lubridate)
+library(magrittr)
+library(broom)
+library(datasets)
+
+##### Bancos de datos de la libreria datasets
+
+# airquality
+attach(airquality)
+help(airquality)
+str(airquality)
+
+
+```
