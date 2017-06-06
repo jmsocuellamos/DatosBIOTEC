@@ -1,4 +1,4 @@
-A continuación s epresentan los bancos de datos básicos que utilizaremos en la primera parte del curso y como ejemplo de algunos de los modleos que veremos en la segunda parte.
+A continuación se presentan los bancos de datos básicos que utilizaremos en la primera parte del curso y como ejemplo de algunos de los modelos que veremos en la segunda parte.
 
 
 # Descripción de ficheros
