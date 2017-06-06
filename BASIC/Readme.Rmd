@@ -51,7 +51,7 @@ str(Puromycin)
 NCBIRTH800=read_csv("https://goo.gl/mB9Jcn", col_types = "dcddcccdccddcc")
 str(NCBIRTH800)
 # Recodificación del factor
-NCBIRTH800 %>% mutate(sex=fct_recode(sex,"male"="1","female"="2"),marital=fct_recode(marital,"married"="1","not married"="2"),racemom=fct_recode(racemom,"other non white"="0","White"="1","Black"="2","America indian"="3","Chinese"="4","Hawaiian"="5","Filipino"="6","Other asian"="7"),hispmom=fct_recode(hispmom,"Cuban"="C","Mexican"="M","Non-Hispanic"="N","Other"="O","Puerto Rican"="P","Central/South american"="S","U"="Not classificable"))
+NCBIRTH800 %>% mutate(sex=fct_recode(sex,"male"="1","female"="2"),marital=fct_recode(marital,"married"="1","not married"="2"),racemom=fct_recode(racemom,"other non white"="0","White"="1","Black"="2","America indian"="3","Chinese"="4","Hawaiian"="5","Filipino"="6","Other asian"="7"),hispmom=fct_recode(hispmom,"Cuban"="C","Mexican"="M","Non-Hispanic"="N","Other"="O","Puerto Rican"="P","Central/South american"="S","U"="Not classificable"),smoke=fct_recode(smoke,"Yes"="1","No"="0"),drink=fct_recode(drink,"Yes"="1","No"="0"),low=fct_recode(low,"Yes"="1","No"="0"),premie=fct_recode(premie,"Yes"="1","No"="0"))
 
 
 
