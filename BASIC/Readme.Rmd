@@ -5,9 +5,11 @@ A continuación s epresentan los bancos de datos básicos que utilizaremos en la
 
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
-airquality      |Daily readings of the following air quality values for May 1, 1973 (a Tuesday) to September 30, 1973. Variables: Ozone = Mean ozone in parts per billion from 1300 to 1500 hours at Roosevelt Island; Solar.R = Solar radiation in Langleys in the frequency band 4000–7700 Angstroms from 0800 to 1200 hours at Central Park; Wind = Average wind speed in miles per hour at 0700 and 1000 hours at LaGuardia Airport; Temp = Maximum daily temperature in degrees Fahrenheit at La Guardia Airport; Month and Day.  
+airquality      |Daily readings of the following air quality values for May 1, 1973 (a Tuesday) to September 30, 1973. 
 esoph      |Data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France. 
 mtcars      |The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+Puromycin      |The Puromycin data frame has 23 rows and 3 columns of the reaction velocity versus substrate concentration in an enzymatic reaction involving untreated cells or cells treated with Puromycin.
+
 
 # Ejecución para la lectura de cada fichero
 
@@ -38,5 +40,8 @@ attach(mtcars)
 help(mtcars)
 str(mtcars)
 
-
+# Puromycin
+attach(Puromycin)
+help(Puromycin)
+str(Puromycin)
 ```
