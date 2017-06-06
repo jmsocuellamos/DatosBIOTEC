@@ -13,7 +13,7 @@ NCBIRTH800      |The table presents data from birth and infant death data for al
 CHOLEST      | Data refer to the serum cholesterol levels for 1000 subjects(pag 206, Daniel)
 HEADCIR      | Data refer to the head circumference of 1000 matched subjects(pag 297, Daniel)
 PCKDATA      | Data refer to the creatine phosphokinase (two groups of subjects) (pag 297, Daniel)
-
+LSADATA | Data refer to the cserum lipid-bound sialic data. We wish to conduct a study to determine if the measurements of serum might be of use in the detection of breast cancer. The measurements are for five populations of subjects: A (Control), B (patients with benign breast disease), C (patients with primary breast cancer), D (patients with recurrent metastasic breast cancer) (pag 403, Daniel)
 
 # Ejecución para la lectura de cada fichero
 
@@ -71,5 +71,9 @@ str(PCKDATA)
 # Construimos la tabla donde cada fila recoje a un sujeto de cada tratamiento
 PCKDATAb = PCKDATA %>% gather(`A`,`B`, key = "Grupo", value = creatine)
 
-
+# LSADATA 
+LSADATA =read_csv("https://goo.gl/m7ewG9", col_types = "idddd")
+str(LSADATA)
+# Construimos la tabla donde cada fila recoje a un sujeto de cada tratamiento
+LSADATAb = LSADATA %>% gather(`A`,`B`, `C`,`D`,key = "Grupo", value = lsa)
 ```
