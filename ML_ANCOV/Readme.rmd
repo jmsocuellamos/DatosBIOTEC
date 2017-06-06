@@ -22,13 +22,13 @@ library(forcats)
 ancov_01=read_csv("https://goo.gl/B3yoLJ", col_types = "ddc")
 str(ancov_01)
 # Recodificación del factor
-ancov_01 %>% mutate(sex=fct_recode(sex,"Boy"="1","Girl"="2"))
+ancov_01=ancov_01 %>% mutate(sex=fct_recode(sex,"Boy"="1","Girl"="2"))
 
 # ancov_02
 ancov_02=read_csv("https://goo.gl/bNOSxt", col_types = "cdddddc")
 str(ancov_02)
 # Total de enfermos
-ancov_02 %>% mutate(CNS=An+Sp+Other)
+ancov_02=ancov_02 %>% mutate(CNS=An+Sp+Other)
 
 # ancov_03
 ancov_03=read_csv("https://goo.gl/0iFS9L", col_types = "dccdd")
@@ -42,12 +42,12 @@ str(ancov_04)
 ancov_05=read_csv("https://hec.su/goIT", col_types = "ddddccdddddd")
 str(ancov_05)
 # Recodificación del factor
-ancov_05 %>% mutate(extras1=fct_recode(extras1,"ABS yes"="1","ABS no"="2"),extras2=fct_recode(extras2,"sunroof yes"="1","sunroof no"="2"))
+ancov_05 = ancov_05 %>% mutate(extras1=fct_recode(extras1,"ABS yes"="1","ABS no"="2"),extras2=fct_recode(extras2,"sunroof yes"="1","sunroof no"="2"))
 
 # ancov_06
 ancov_06=read_csv("https://hec.su/goJp", col_types = "dcdddddccccc")
 str(ancov_06)
 # Recodificación del factor
-ancov_06 %>% mutate(cgender=fct_recode(cgender,"male"="1","female"="0"),meducation=fct_recode(meducation,"no education"="1","primary school"="2","secondary school"="3","higher education"="4"),mwork=fct_recode(mwork,"mother working"="1","mother not working"="0"),region=fct_recode(mwork,"Central"="1","Copperbelt"="2","Eastern"="3","Luapula"="4","Lusaka"="5","Northern"="6","North western"="7","Southern"="8","Western"="9"))
+ancov_06 = ancov_06 %>% mutate(cgender=fct_recode(cgender,"male"="1","female"="0"),meducation=fct_recode(meducation,"no education"="1","primary school"="2","secondary school"="3","higher education"="4"),mwork=fct_recode(mwork,"mother working"="1","mother not working"="0"),region=fct_recode(mwork,"Central"="1","Copperbelt"="2","Eastern"="3","Luapula"="4","Lusaka"="5","Northern"="6","North western"="7","Southern"="8","Western"="9"))
 ```
 
