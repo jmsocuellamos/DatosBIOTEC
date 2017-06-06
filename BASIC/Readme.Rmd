@@ -11,6 +11,9 @@ mtcars      |The data was extracted from the 1974 Motor Trend US magazine, and c
 Puromycin      |The Puromycin data frame has 23 rows and 3 columns of the reaction velocity versus substrate concentration in an enzymatic reaction involving untreated cells or cells treated with Puromycin.
 NCBIRTH800      |The table presents data from birth and infant death data for all children born in the state of North Carolina. This comprenhensive data set for the births in 2001. The variables are as follows: plural (number of children born of the pregnancy),	sex (sex of child),	mage (age of mother),	weeks (completed weeks of gestation),	marital (marital status),	racemom (race of mother),	hispmom (mother of hispanic origin),	gained (weight gained during pregnancy in pounds), smoke,	drink, tounces (weight of child in onces),	tgrams (weight of child in grams), low (low birth weight),	premie (premature) (pag 56, Daniel)
 CHOLEST      | Data refer to the serum cholesterol levels for 1000 subjects(pag 206, Daniel)
+HEADCIR      | Data refer to the head circumference of 1000 matched subjects(pag 297, Daniel)
+PCKDATA      | Data refer to the creatine phosphokinase (two groups of subjects) (pag 297, Daniel)
+
 
 # Ejecución para la lectura de cada fichero
 
@@ -57,5 +60,16 @@ NCBIRTH800 %>% mutate(sex=fct_recode(sex,"male"="1","female"="2"),marital=fct_re
 # CHOLEST
 CHOLEST=read_csv("https://goo.gl/b5ZAb1", col_types = "id")
 str(CHOLEST)
+
+# HEADCIR
+HEADCIR=read_csv("https://goo.gl/juWJEu", col_types = "idd")
+str(HEADCIR)
+
+# PCKDATA 
+PCKDATA =read_csv("https://goo.gl/W8Bfgv", col_types = "idd")
+str(PCKDATA)
+# Construimos la tabla donde cada fila recoje a un sujeto de cada tratamiento
+PCKDATAb = PCKDATA %>% gather(`A`,`B`, key = "Grupo", value = creatine)
+
 
 ```
