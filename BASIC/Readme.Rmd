@@ -41,8 +41,8 @@ attach(esoph)
 help(esoph)
 str(esoph)
 
-# mtcars
-data(mmp)
+# mpg
+data(mpg)
 help(mpg)
 str(mpg)
 
