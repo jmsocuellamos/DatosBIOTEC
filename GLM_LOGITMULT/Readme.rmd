@@ -84,12 +84,12 @@ glm_multi_08=read_csv("https://goo.gl/ygFQLW", col_types = "cccii")
 str(glm_multi_08)
 ## recodificar factores
 # Recodificación del factor
-glm_multi_08 %>% mutate(district=fct_recode(district,"London"="1","Otherwise"="0"))
+glm_multi_08=glm_multi_08 %>% mutate(district=fct_recode(district,"London"="1","Otherwise"="0"))
 
 # glm_multi_12
 glm_multi_12=read_csv("https://goo.gl/t1ycTq", col_types = "iicddddddddccccc")
 str(gglm_multi_12)
 ## recodificar factores
 # Recodificación del factor
-glm_multi_12 %>% mutate(watermoisture=fct_recode(watermoisture,"moderately dry"="1","moderately moist"="2","moist or temporarily wet"="3"),alkali=fct_recode(alkali,"very low"="1","low"="2","moderate"="3","high"="4"),humus=fct_recode(humus,"0 cm"="0","1 cm"="1","2 cm"="2","3 cm"="3","more than 3 cm"="4"),type=fct_recode(type,"deciduous forest"="0","mixed forest"="1"),fert=fct_recode(fert,"not fertilizied"="0","fertilizied"="1"))
+glm_multi_12=glm_multi_12 %>% mutate(watermoisture=fct_recode(watermoisture,"moderately dry"="1","moderately moist"="2","moist or temporarily wet"="3"),alkali=fct_recode(alkali,"very low"="1","low"="2","moderate"="3","high"="4"),humus=fct_recode(humus,"0 cm"="0","1 cm"="1","2 cm"="2","3 cm"="3","more than 3 cm"="4"),type=fct_recode(type,"deciduous forest"="0","mixed forest"="1"),fert=fct_recode(fert,"not fertilizied"="0","fertilizied"="1"))
 ```
