@@ -7,7 +7,7 @@ Nombre             | Descripción
 -------------------|------------------------------------------------------------
 airquality      |Daily readings of the following air quality values for May 1, 1973 (a Tuesday) to September 30, 1973. 
 esoph      |Data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France. 
-mtcars      |The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+mpg      |This dataset contains a subset of the fuel economy data that the EPA makes available on http://fueleconomy.gov. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car. Variables in data set: manufacturer model (model name); displ (engine displacement, in litres); year (year of manufacture); cyl (number of cylinders); trans (type of transmission); drv (f = front-wheel drive, r = rear wheel drive, 4 = 4wd); cty (city miles per gallon); hwy (highway miles per gallon); fl (fuel type); class ("type" of car).
 Puromycin      |The Puromycin data frame has 23 rows and 3 columns of the reaction velocity versus substrate concentration in an enzymatic reaction involving untreated cells or cells treated with Puromycin.
 NCBIRTH800      |The table presents data from birth and infant death data for all children born in the state of North Carolina. This comprenhensive data set for the births in 2001. The variables are as follows: plural (number of children born of the pregnancy),	sex (sex of child),	mage (age of mother),	weeks (completed weeks of gestation),	marital (marital status),	racemom (race of mother),	hispmom (mother of hispanic origin),	gained (weight gained during pregnancy in pounds), smoke,	drink, tounces (weight of child in onces),	tgrams (weight of child in grams), low (low birth weight),	premie (premature) (pag 56, Daniel)
 CHOLEST      | Data refer to the serum cholesterol levels for 1000 subjects(pag 206, Daniel)
@@ -42,9 +42,9 @@ help(esoph)
 str(esoph)
 
 # mtcars
-attach(mtcars)
-help(mtcars)
-str(mtcars)
+data(mmp)
+help(mpg)
+str(mpg)
 
 # Puromycin
 attach(Puromycin)
