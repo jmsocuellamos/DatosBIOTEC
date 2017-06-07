@@ -48,6 +48,6 @@ ancov_05 = ancov_05 %>% mutate(extras1=fct_recode(extras1,"ABS yes"="1","ABS no"
 ancov_06=read_csv("https://hec.su/goJp", col_types = "dcdddddccccc")
 str(ancov_06)
 # Recodificación del factor
-ancov_06 = ancov_06 %>% mutate(cgender=fct_recode(cgender,"male"="1","female"="0"),meducation=fct_recode(meducation,"no education"="1","primary school"="2","secondary school"="3","higher education"="4"),mwork=fct_recode(mwork,"mother working"="1","mother not working"="0"),region=fct_recode(mwork,"Central"="1","Copperbelt"="2","Eastern"="3","Luapula"="4","Lusaka"="5","Northern"="6","North western"="7","Southern"="8","Western"="9"))
+ancov_06 = ancov_06 %>% mutate(cgender=fct_recode(cgender,"male"="1","female"="0"),meducation=fct_recode(meducation,"no education"="1","primary school"="2","secondary school"="3","higher education"="4"),mwork=fct_recode(mwork,"mother working"="1","mother not working"="0"),region=fct_recode(region,"Central"="1","Copperbelt"="2","Eastern"="3","Luapula"="4","Lusaka"="5","Northern"="6","North western"="7","Southern"="8","Western"="9"))
 ```
 
