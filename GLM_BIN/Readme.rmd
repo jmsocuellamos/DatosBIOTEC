@@ -1,4 +1,4 @@
-e# Descripción de ficheros
+# Descripción de ficheros
 
 Nombre             | Descripción
 -------------------|------------------------------------------------------------
