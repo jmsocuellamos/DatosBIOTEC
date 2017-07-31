@@ -77,7 +77,8 @@ str(glm_bin_06)
 glm_bin_06=glm_bin_06 %>% mutate(infbin=fct_recode(infbin,"infection" = "1","no infection" = "0"),NPLAN=fct_recode(NPLAN,"no planned" = "1","planned" = "0"),RISK=fct_recode(RISK,"risk factors existed" = "1","no risk factors" = "0"),ANTIB=fct_recode(ANTIB,"antibiotics" = "1","no antibiotics" = "0")) 
 
 # glm_bin_07
-glm_bin_07=read_csv("https://hec.su/goEN", col_types = "dccddcc")
+glm_bin_07=read_csv("glm_bin_07=glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
+saveRDS(glm_bin_07, "glm_bin_07.rds")", col_types = "dccddcc")
 str(glm_bin_07)
 # Recodificación de factores 
 glm_bin_07=glm_bin_07 %>% mutate(acc1=fct_recode(acc1,"no running account" = "1","good or bad running account" = "0"),acc2=fct_recode(acc2,"good running account" = "1","no or bad running account" = "0"),moral=fct_recode(moral,"good" = "1","bad" = "0"),intuse=fct_recode(intuse,"private" = "1","business" = "0")) 
