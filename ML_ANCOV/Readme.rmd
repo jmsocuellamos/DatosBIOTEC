@@ -39,7 +39,7 @@ ancov_04=read_csv("https://goo.gl/OX9wgM", col_types = "ddddddc")
 str(ancov_04)
 
 # ancov_05
-ancov_05=read_csv("https://hec.su/goIT", col_types = "ddddccdddddd")
+ancov_05=read_csv("https://goo.gl/CLtVZq", col_types = "ddddccdddddd")
 str(ancov_05)
 # Recodificación del factor
 ancov_05 = ancov_05 %>% mutate(extras1=fct_recode(extras1,"ABS yes"="1","ABS no"="2"),extras2=fct_recode(extras2,"sunroof yes"="1","sunroof no"="2"))
