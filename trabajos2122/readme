@@ -1,4 +1,6 @@
 
+# Regresión lineal múltiple
+
 Fichero mult_linear_reg.csv:  
 
 El conjunto de datos contiene 9568 puntos de datos recogidos de una central eléctrica de ciclo combinado a lo largo de 6 años (2006-2011), 
@@ -6,4 +8,11 @@ cuando la central se puso a trabajar a plena carga. Las características consist
 Presión Ambiental (AP), Humedad Relativa (HR) y Vacío de Escape (V) para predecir la producción de energía eléctrica neta por hora (EP) de la planta.
 
 Se está interesado e predecir la producción de energía eléctrica en función dle resto de variables.
+
+Fichero concrete_data.csv
+
+El conjunto de datos hace referencia a las pruebas de calidad para la obtención de hormigón. Más concretamente se está interesado en estudiar la dureza del 
+hormigón (Strength) en función de las varaibles usadas en su fabricación: Cement, Blast Furnace Slag, Fly Ash, Water, Superplasticizer, Coarse Aggregate, 
+Fine Aggregate, y Age.
+
 
