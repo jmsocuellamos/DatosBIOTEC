@@ -1,0 +1,37 @@
+Density,Cultivate,Block,Plot,Successful 
+200,Jonagold,I,1,1
+200,Golden delicious,I,2,1
+200,Jonathan,I,3,2
+1000,Jonagold,I,4,0
+1000,Golden delicious,I,5,0
+1000,Jonathan,I,6,4
+5000,Jonagold,I,7,5
+5000,Golden delicious,I,8,5
+5000,Jonathan,I,9,5
+200,Jonagold,II,1,2
+200,Golden delicious,II,2,0
+200,Jonathan,II,3,2
+1000,Jonagold,II,4,2
+1000,Golden delicious,II,5,0
+1000,Jonathan,II,6,4
+5000,Jonagold,II,7,5
+5000,Golden delicious,II,8,4
+5000,Jonathan,II,9,0
+200,Jonagold,III,1,1
+200,Golden delicious,III,2,0
+200,Jonathan,III,3,2
+1000,Jonagold,III,4,2
+1000,Golden delicious,III,5,2
+1000,Jonathan,III,6,4
+5000,Jonagold,III,7,4
+5000,Golden delicious,III,8,3
+5000,Jonathan,III,9,3
+200,Jonagold,IV,1,0
+200,Golden delicious,IV,2,0
+200,Jonathan,IV,3,0
+1000,Jonagold,IV,4,4
+1000,Golden delicious,IV,5,0
+1000,Jonathan,IV,6,0
+5000,Jonagold,IV,7,5
+5000,Golden delicious,IV,8,5
+5000,Jonathan,IV,9,5
