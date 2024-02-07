@@ -11,7 +11,7 @@ Block,Section,Plot,Weather,Fertilizer,Variety,Infected
 1,2,5,1,3.5,Dalibor,48
 1,2,6,1,4,Aminex,58
 1,2,6,1,4,Dalibor,38
-1,3,7,2,2,Aminex,60
+2,3,7,2,2,Aminex,60
 2,3,7,2,2,Dalibor,46
 2,3,8,2,3.5,Aminex,51
 2,3,8,2,3.5,Dalibor,52
